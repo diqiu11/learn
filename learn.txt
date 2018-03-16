@@ -15,6 +15,26 @@ Git是如何跟踪修改的，每次修改，如果不add到暂存区，那就�
 		  2.修改暂存区：git reset HEAD file  暂存区的文件回到了工作区，在通过第一步修改
 		  3.修改版本库文件：git reset --hard commit id
 
+remove: 1.rm后，如果file有在版本库中还是可以恢复到本地，或者用git永久删除
+2.恢复到本地： git checkout --filename    3.永久删除：git rm filename  -->  git commit -m 'rm'
+
+远程repository：ssh-keygen -t rsa -C "@"
+关联github的仓库和git
+git remote add origin git@github.com:michaelliao/learngit.git
+首次将master主分支上传到github：git push -u origin master
+普通上传：git push origin master
+
+克隆别人的git：git clone '@'
+
+分支管理：
+Git鼓励大量使用分支：分支的作用可以使工作互相不干扰
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>
+创建+切换分支：git checkout -b <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
+
 
 
 
