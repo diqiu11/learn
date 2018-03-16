@@ -1,0 +1,23 @@
+初学git的命令集合
+注：因为git同为linus所创，所以git的命令和linux基本命令是一致的
+create the version repository：1.chance or mkdir a one 文件夹		2.git init
+
+add and commit document or code：	1.git add ‘fielname’  		2.git commit -m ‘explain’
+
+look status and difference： 	1.git status 	2.git diff ‘fielname’
+
+version back or before: 1.look commit history: git log (--pretty=oneline)/ git reflog
+2.back: git reset --hard 'commit id or HAED^'  已经commit文件了
+
+Git是如何跟踪修改的，每次修改，如果不add到暂存区，那就不会加入到commit中。
+
+修改文件：1.修改工作区：git checkout --file
+		  2.修改暂存区：git reset HEAD file  暂存区的文件回到了工作区，在通过第一步修改
+		  3.修改版本库文件：git reset --hard commit id
+
+
+
+
+
+
+
