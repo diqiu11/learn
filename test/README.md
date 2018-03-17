@@ -1,3 +1,7 @@
 # test
 change this txst¡£
-crating a new branch is quick & simple
+<<<<<<< HEAD
+crating a new branch is quick and simple
+=======
+creating a new branch is quick and simple.
+>>>>>>> feature1
