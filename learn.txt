@@ -22,7 +22,7 @@ remove: 1.rm后，如果file有在版本库中还是可以恢复到本地，或�
 关联github的仓库和git
 git remote add origin git@github.com:michaelliao/learngit.git
 首次将master主分支上传到github：git push -u origin master
-普通上传：git push origin master
+普通上传：git push origin master  		因为创建的名字为origin
 
 克隆别人的git：git clone '@'
 
@@ -34,6 +34,10 @@ Git鼓励大量使用分支：分支的作用可以使工作互相不干扰
 创建+切换分支：git checkout -b <name>
 合并某分支到当前分支：git merge <name>
 删除分支：git branch -d <name>
+
+当分支两者存在冲突的时候，应该解决掉冲突在提交，查看：git log --graph --pretty=oneline --abbrev-commit
+
+
 
 
 
